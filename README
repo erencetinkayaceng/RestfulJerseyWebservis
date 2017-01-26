@@ -1,0 +1,5 @@
+Bu proje bir android uygulamasının kullanacak olduğu webservisdir. Proje java teknolojileri kullanılarak yazılmıştır.
+Başta maven ile bağımlılıklar kontrol altına alınmıştır. JAX-RS webservisidir. Projede veritabanı hibernate ile yazılmıştır.
+Webservis kısmında restful jersey frameworkü kullanılmıştır. Veritabanına kayıt girilmesi için servlet/jsp kullanılarak basit bir kayıt sayfaları oluşturulmuştur. Bu jsp sayfalarının görünümüne özen göstermedim çünkü benim için önemli olan webservis kısmıdır.
+Projenin kodlarını istediğiniz gibi uygulamalarınızda kullanabilirsiniz. Alıntı yapacak olursanız kaynak gösterirseniz iyi olur.
+Yararlı olması dileğiyle.

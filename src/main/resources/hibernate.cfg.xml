@@ -1,0 +1,33 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+ 
+<hibernate-configuration>
+ 
+    <session-factory>
+ 
+        <!-- Veritabanı baglanti bilgileri -->
+        <!-- SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <!-- Veritabanı jdbc -->
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <!--Veritabanımız için bağlantı yolunu vereceğiz  -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/jerseywsdb</property>
+        <!-- Veritabanı kullanıcı adı -->        
+        <property name="connection.username">root</property>
+        <!-- Kullanıcı parolamız -->
+        <property name="connection.password">password</property>
+        
+        <property name="hibernate.hbm2ddl.auto">update</property>
+    	<property name="hibernate.current_session_context_class">thread</property>  
+    	 
+		<!-- Burası ise veritabanımıza haritalanacak olan sınıflar sınıfımızın yolu -->
+        <mapping class="com.ekkod.web.model.GuncelBilgi"/>
+		<mapping class="com.ekkod.web.model.Ipucu"/>
+		<mapping class="com.ekkod.web.model.Kategori"/>
+		<mapping class="com.ekkod.web.model.Soru"/>
+		<mapping class="com.ekkod.web.model.Test"/>
+		<mapping class="com.ekkod.web.model.Kullanici"/>
+    </session-factory>
+ 
+</hibernate-configuration>
